@@ -1,11 +1,60 @@
 $red: rgba(255, 0, 0, 1);
-
-h1 {
-    color: $red
-}
+$yellow: #FFC000;
 
 body {
-    background-color: #555;
+    background-color: #666;
 }
 
+#app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+}
 
+#app .content, .counter {
+    color: white;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+    line-height: 2em;
+    letter-spacing: 10px;
+}
+
+h1 {
+    letter-spacing: 25px;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    color: $yellow;
+}
+
+#app .counter-number {
+    color: $yellow;
+    font-size: 3em;
+    line-height: 2em;
+    letter-spacing: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 0 30px;
+}
+
+.mega-counter {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    p {
+        display: inline-block;
+    }
+    .mega-counter-number {
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+}
