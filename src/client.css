@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-#app .content, .counter {
+#app .content, .counter, button {
     color: white;
     font-family: 'Lato';
     text-transform: uppercase;
@@ -24,6 +24,12 @@ body {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     line-height: 2em;
     letter-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: 1px dashed #FFF;
 }
 
 h1 {
@@ -44,6 +50,9 @@ button {
     background-color: transparent;
     border: 1px solid #FFF;
     padding: 0 30px;
+    font-size: 0.6em;
+    text-shadow: none;
+    font-weight: normal;
 }
 
 .mega-counter {
@@ -57,4 +66,10 @@ button {
         display: inline-block;
         letter-spacing: 5px;
     }
+}
+
+.greeting {
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-size: 1em;
 }
