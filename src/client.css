@@ -1,35 +1,72 @@
 $red: rgba(255, 0, 0, 1);
 $yellow: #FFC000;
+$light-grey: #DDD;
+
 
 body {
     background-color: #FFF;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, button {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
 }
 
 #app {
-    display: none;
-}
-
-#appi {
     margin: 0 auto;
     width: 80%;
 }
 
-h1, button {
+h1, .new-note {
     display: inline-block;
 }
 
-button {
-
+.new-note button {
+    background-color: $light-grey;
+    border: 0;
+    padding: 0.8em;
+    margin-left: 20px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
 }
 
 .note-container {
     width: 100%;
-    height: 500px;
-    border: 1px solid #444;
+    height: auto;
+    /*border: 1px solid #444;*/
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 30px 0;
 }
 
 .note {
-    background-color: #BBB;
-    border-bottom: 1px solid #444;
-    height: 40px;
+    background-color: $light-grey;
+    flex: 1;
+    padding: 15px 20px;
+    border-bottom: 1px solid #FFF;
+    .note-title {
+        margin: 0;
+        font-size: 1em;
+        letter-spacing: 2px;
+        padding: 10px 0;
+        text-transform: uppercase;
+    }
+    .note-content {
+        padding: 10px 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #app {
+        width: 100%;
+    }
+    h1 {
+        padding-left: 20px;
+    }
 }

@@ -5,16 +5,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Router, Route, Link, IndexRoute } from 'react-router';
-import HelloWorldApp from './components/HelloWorldApp';
-import Greeter from './components/Greeter';
+import NotesApp from './components/NotesApp';
 import FrontPage from './components/FrontPage';
 
 
 const routes = (
     <Router>
-        <Route path="/" component={HelloWorldApp}>
+        <Route path="/" component={NotesApp}>
             <IndexRoute component={FrontPage} />
-            <Route path="/hello/:name" component={Greeter}></Route>
         </Route>
     </Router>
 );

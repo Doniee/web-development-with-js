@@ -1,28 +1,18 @@
 import React from 'react';
-import HelloWorld from './HelloWorld';
-import Counterizer from './Counterizer';
-import Counter from './Counter';
+
+import Notes from './Notes';
 
 const Index = React.createClass({
 
     render: function() {
-
-        const { count, names, onIncrementCounter } = this.props;
-
+        const { onAddNew } = this.props;
+        console.log(this.props);
         return (
-
             <div>
 
-                {names.map((name, i) =>
-                    <HelloWorld key={i} name={name}/>
-                )}
-
-                <Counterizer
+                <Notes
                     {...this.props}
                 />
-
-                <Counter count={count}/>
-
             </div>
         );
     }
