@@ -53,12 +53,26 @@ h1, .new-note {
         margin: 0;
         font-size: 1em;
         letter-spacing: 2px;
-        padding: 10px 0;
+        padding: 10px 5px;
         text-transform: uppercase;
     }
     .note-content {
-        padding: 10px 0;
+        padding: 10px 5px;
         margin: 0;
+        resize: none;
+        height: auto;
+    }
+    .note-title, .note-content {
+        background-color: transparent;
+        /*border: 1px solid rgba(0 0 0 0);*/
+        border: 0;
+        /*box-sizing: border-box;*/
+        display: block;
+        width: 100%;
+        outline: none;
+        &:focus {
+            outline: 1px solid #BBB;
+        }
     }
 }
 

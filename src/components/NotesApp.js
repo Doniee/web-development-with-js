@@ -5,18 +5,7 @@ const NotesApp = React.createClass({
     getInitialState: function() {
         return {
             notes: [
-                {
-                    title: 'Note 1',
-                    content: 'Lalalaa'
-                },
-                {
-                    title: 'Note 2',
-                    content: 'Lalalaa'
-                },
-                {
-                    title: 'Note 3',
-                    content: 'Lalalaa'
-                }
+
             ]
         }
     },
@@ -37,10 +26,12 @@ const NotesApp = React.createClass({
         );
     },
     addNew: function() {
+        const id = Math.random();
         this.setState({
             notes: [{
-                title: 'Note 1',
-                content: 'Lalalaa'
+                title: 'Note title',
+                id,
+                content: 'Content'
             }].concat(this.state.notes)
         });
 
